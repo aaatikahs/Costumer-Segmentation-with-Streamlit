@@ -37,7 +37,7 @@ with col2:
     age = st.number_input("Age", min_value=0, max_value=100, step=1, value=30)
     family_size = st.number_input("Number of family members (including the customer)", min_value=1, max_value=20, step=1, value=3)
     profession = st.selectbox("What is your profession?", ["Artist", "Doctor", "Engineer", "Entertainment", "Executive",
-                                              "Healthcare", "Homemaker", "Lawyer", "Marketing", "Unemployed","Other"])
+                                              "Healthcare", "Homemaker", "Lawyer", "Marketing","Other", "Unemployed"])
     # Handle 'Other' selection by treating it as 'Undefined'
     if profession == "Other":
         profession = "Undefined"
