@@ -28,22 +28,22 @@ st.subheader("Input Customer Data")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    age = st.number_input("Age", min_value=0, max_value=100, step=1, value=30)
+    gender = st.selectbox("What is your gender?", ["Female", "Male"])
     married = st.selectbox("Have you ever been married?", ["Yes", "No"])
     work_experience = st.number_input("Work Experience (years)", min_value=0, max_value=50, step=1, value=5)
     st.caption("Enter 0 if you are not currently employed.")  # Note added below the work experience input
 
 with col2:
-    graduated = st.selectbox("Have you ever graduated?", ["Yes", "No"])
-    profession = st.selectbox("What is your profession?", ["Artist", "Doctor", "Engineer", "Entertainment", "Executive", 
+    age = st.number_input("Age", min_value=0, max_value=100, step=1, value=30)
+    family_size = st.number_input("Number of family members (including the customer)", min_value=1, max_value=20, step=1, value=3)
+    profession = st.selectbox("What is your profession?", ["Artist", "Doctor", "Engineer", "Entertainment", "Executive",
                                               "Healthcare", "Homemaker", "Lawyer", "Marketing", "Undefined", "Unemployed"])
     st.caption("Select **Undefined** if your profession is not listed.")  # Note added below the profession input
-    gender = st.selectbox("What is your gender?", ["Female", "Male"])
 
 with col3:
+    graduated = st.selectbox("Have you ever graduated?", ["Yes", "No"])
     spending_score = st.selectbox("How big of a spender on automobiles are you?", ["Low", "Average", "High"])
-    family_size = st.number_input("Number of family members (including the customer)", min_value=1, max_value=20, step=1, value=3)
-
+    
 # Add Submit button
 if st.button("Submit"):
     # Define label and one-hot encoding mappings
