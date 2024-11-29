@@ -104,7 +104,7 @@ if st.button("Submit"):
     # Retrieve and display the description
     if segment_label in segment_descriptions.index:
         st.success(f"The customer belongs to Segment {segment_label}.")
-        st.markdown(f"**Segment Description:** {segment_descriptions.loc[segment_label, 'description']}")
+        st.markdown(f"**Segment Description:** {segment_descriptions.loc[segment_label, 'Description']}")
     else:
         st.error(f"Segment {segment_label} not found in segment descriptions.")
         st.markdown("Please check your model or descriptions file.")
