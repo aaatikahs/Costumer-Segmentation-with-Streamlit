@@ -44,7 +44,7 @@ with col2:
     st.caption("Select **Other** if your profession is not listed.")  # Note added below the profession input
 
 with col3:
-    graduated = st.selectbox("Have you ever graduated?", ["Yes", "No"])
+    graduated = st.selectbox("Have you graduated?", ["Yes", "No"])
     spending_score = st.selectbox("How much do you usually spend on automobiles??", ["Low", "Average", "High"])
     
 # Add Submit button
