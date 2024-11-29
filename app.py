@@ -31,11 +31,13 @@ with col1:
     age = st.number_input("Age", min_value=0, max_value=100, step=1, value=30)
     married = st.selectbox("Have you ever been married?", ["Yes", "No"])
     work_experience = st.number_input("Work Experience (years)", min_value=0, max_value=50, step=1, value=5)
+    st.caption("Enter 0 if you are not currently employed.")  # Note added below the work experience input
 
 with col2:
     graduated = st.selectbox("Have you ever graduated?", ["Yes", "No"])
     profession = st.selectbox("What is your profession?", ["Artist", "Doctor", "Engineer", "Entertainment", "Executive", 
                                               "Healthcare", "Homemaker", "Lawyer", "Marketing", "Undefined", "Unemployed"])
+    st.caption("Select **Undefined** if your profession is not listed.")  # Note added below the profession input
     gender = st.selectbox("What is your gender?", ["Female", "Male"])
 
 with col3:
