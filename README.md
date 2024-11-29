@@ -1,4 +1,4 @@
-<img width="1429" alt="image" src="https://github.com/user-attachments/assets/3817b04e-989a-4aee-a885-6e139f923a3c">
+<img width="1431" alt="image" src="https://github.com/user-attachments/assets/fe90c65a-5e12-4be4-8dce-7caa39f7e9a4">
 
 <ul>
 <li> Dataset: https://www.kaggle.com/datasets/kaushiksuresh147/customer-segmentation?select=Train.csv
