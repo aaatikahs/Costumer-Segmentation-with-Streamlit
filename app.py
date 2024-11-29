@@ -45,7 +45,7 @@ with col2:
 
 with col3:
     graduated = st.selectbox("Have you ever graduated?", ["Yes", "No"])
-    spending_score = st.selectbox("How big of a spender on automobiles are you?", ["Low", "Average", "High"])
+    spending_score = st.selectbox("How much do you usually spend on automobiles??", ["Low", "Average", "High"])
     
 # Add Submit button
 if st.button("Submit"):
