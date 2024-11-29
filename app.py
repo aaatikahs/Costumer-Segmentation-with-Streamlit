@@ -21,7 +21,7 @@ with open("descriptions.json") as f:
 segment_descriptions = pd.DataFrame(segment_descriptions.values(), index=segment_descriptions.keys(), columns=["Description"])
 st.table(segment_descriptions)
 
-st.markdown("These descriptions are **by no means definitive**. They are simply the result of Exploratory Data Analysis (EDA) process.")
+st.markdown("**These descriptions are not absolute or final**; they are based on insights gathered from the Exploratory Data Analysis (EDA) process, which provides an initial understanding rather than definitive conclusions.")
 
 # User input form
 st.subheader("Input Customer Data")
