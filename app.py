@@ -18,7 +18,7 @@ st.markdown("It uses a trained Random Forest model to predict customer segments 
 # Load segment descriptions
 with open("descriptions.json") as f:
     segment_descriptions = json.load(f)
-segment_descriptions = pd.DataFrame(segment_descriptions.values(), index=segment_descriptions.keys(), columns=["Segment","Description"])
+segment_descriptions = pd.DataFrame(segment_descriptions.values(), index=segment_descriptions.keys(), columns=["Description"])
 st.table(segment_descriptions)
 
 st.markdown("These descriptions are **by no means definitive**. They are simply the result of Exploratory Data Analysis (EDA) process.")
